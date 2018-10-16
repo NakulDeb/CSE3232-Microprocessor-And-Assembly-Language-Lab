@@ -1,0 +1,21 @@
+.MODEL SMALL
+.STACK 100H
+.DATA
+.CODE
+MAIN PROC
+    
+    MOV CX,20
+    
+    START:
+    MOV AH,2
+    MOV DL,'*'
+    INT 21H
+    LOOP START
+    
+    
+    MOV CX,5
+    
+    MOV AH,4CH
+    INT 21H
+    MAIN ENDP
+END MAIN

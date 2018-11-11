@@ -1,3 +1,8 @@
+; University of Rajshahi
+; Name : Nakul Deb Nath
+; Dept : CSE
+; Date : 20-10-2018
+
 .MODEL SMALL
 .STACK 100H
 
@@ -6,7 +11,7 @@
     N DW ?
     MSG1 DB 'Enter the amount or numbers : $'
     MSG2 DB 'Enter the numbers : $'
-    MSG3 DB 'After Bubble sort : $'
+    MSG3 DB 'Ascending Order   : $'
 
 .CODE 
 MAIN PROC
@@ -23,7 +28,6 @@ MAIN PROC
     INT 21H
     SUB AX,130H
     MOV N,AX
-    ;printn ''
     
     MOV AH,2
     MOV DL,0AH
